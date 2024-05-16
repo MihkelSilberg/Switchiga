@@ -4,9 +4,23 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("sisesta number");
-            int number =Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("vajuta 1 kui tahad valikut ja 2 kui ei taha");
+            string valikud = Console.ReadLine();
+           if (valikud == "1")
+            {
+                SwitchMethod();
+            }
+           else if (valikud == "2")
+            {
+                Console.WriteLine("ei valinud");
+            }
 
+        }
+        static void SwitchMethod()
+        {
+             Console.WriteLine("ma loen teie mõtteid. vali nr 1-3");
+             int number =Convert.ToInt32(Console.ReadLine());
+            
             switch (number)
             {
                 case 1:
